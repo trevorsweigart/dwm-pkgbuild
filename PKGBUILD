@@ -11,11 +11,14 @@ depends=('libx11' 'libxinerama' 'libxft')
 makedepends=('git')
 provides=('dwm')
 conflicts=('dwm')
-source=("$_pkgname::git+http://github.com/trevorsweigart/dwm")
-sha256sums=('SKIP')
+source=("$_pkgname::git+http://github.com/trevorsweigart/dwm"
+  "config.h")
+sha256sums=('SKIP'
+  'SKIP')
 
 prepare() {
   cd $_pkgname
+  cp -fv "$srcdir/config.h" config.h
 }
 
 build() {
