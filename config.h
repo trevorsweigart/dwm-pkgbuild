@@ -54,9 +54,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      dwindle },    /* first entry is default */
+	{ "[]=",      tile },    /* master on left and slaves on right */
+	{ "[\\]",      dwindle },    /* Decreasing in size right and leftward */
 	{ "[@]",      spiral },    /* Fibonacci spiral */
-	{ "[/]",      tile },    /* master on left and slaves on right */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },  /* All windows on top of each other */
 	{ "H[]",      deck },
