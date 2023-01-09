@@ -107,7 +107,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-static const char *browsercmd[] = { "waterfox-g", NULL };
+static const char *browsercmd[] = { "waterfox", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
